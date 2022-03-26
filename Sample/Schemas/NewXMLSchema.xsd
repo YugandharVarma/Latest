@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/NewXMLSchema" xmlns:tns="http://www.example.org/NewXMLSchema" elementFormDefault="qualified">
+
+    <complexType name="CUSTOMERDETAILS_TYPE">
+    	<sequence>
+    		<element ref="tns:CUSTOMER" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="CUSTOMER_TYPE">
+    	<sequence>
+    		<element ref="tns:CUSID"></element>
+    		<element ref="tns:CUSNAME"></element>
+    		<element ref="tns:CUSADD"></element>
+    		<element ref="tns:CUSPH"></element>
+    		<element ref="tns:CUSMAILID"></element>
+    		<element ref="tns:CUSSALARY"></element>
+    		<element ref="tns:CUSSTATUS"></element>
+    		<element ref="tns:CUSDATE"></element>
+    	</sequence>
+    </complexType>
+    
+    <element name="CUSID" type="integer"></element>
+
+    <element name="CUSNAME" type="string"></element>
+
+    <element name="CUSADD" type="string"></element>
+
+    <element name="CUSPH" type="integer"></element>
+
+    <element name="CUSMAILID" type="string"></element>
+
+    <element name="CUSSALARY" type="integer"></element>
+
+    <element name="CUSSTATUS" type="string"></element>
+
+    <element name="CUSDATE" type="string"></element>
+
+    <element name="CUSTOMER" type="tns:CUSTOMER_TYPE"></element>
+
+    <element name="CUSTOMERDETAILS" type="tns:CUSTOMERDETAILS_TYPE"></element>
+</schema>

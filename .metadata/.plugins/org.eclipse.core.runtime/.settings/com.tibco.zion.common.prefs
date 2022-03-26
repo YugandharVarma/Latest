@@ -1,0 +1,3 @@
+Sample.application|tibco.preference.bw.profileConfigProperties=PropertyFirstColumnId,0,200;default,1,200;SIT,2,200
+Sample|tibco.preference.bw.profileConfigProperties=PropertyFirstColumnId,0,250;Type,1,200;default,2,639
+eclipse.preferences.version=1

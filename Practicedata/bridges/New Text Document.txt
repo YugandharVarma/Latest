@@ -1,0 +1,6 @@
+help
+                                [selector=<selector>]
+
+create bridge source=queue:feb.queue.req target=queue:A
+create bridge source=queue:feb.queue.req target=queue:B
+create bridge source=queue:feb.queue.req target=queue:C

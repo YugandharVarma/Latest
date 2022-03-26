@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_w5UroJzwEeySuJvcOo8iqQ" targetNamespace="http://tns.tibco.com/bw/composite/Sample" name="Sample" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_z5reQJzwEeySuJvcOo8iqQ" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_z6qVsJzwEeySuJvcOo8iqQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_z69QoJzwEeySuJvcOo8iqQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_z7HBoJzwEeySuJvcOo8iqQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_z7QyoJzwEeySuJvcOo8iqQ" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_z7jtkJzwEeySuJvcOo8iqQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_z7tekJzwEeySuJvcOo8iqQ" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_z8AZgJzwEeySuJvcOo8iqQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_z8KKgJzwEeySuJvcOo8iqQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_m_9W0J0REeySuJvcOo8iqQ" name="ComponentCSV2DB" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_m_9W0Z0REeySuJvcOo8iqQ" processName="JDBC.CSV2DB"/>
+  </sca:component>
+  <sca:component xmi:id="_Z2wNcp0oEeySuJvcOo8iqQ" name="ComponentMCSV2DB" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Z2wNc50oEeySuJvcOo8iqQ" processName="JDBC.MCSV2DB"/>
+  </sca:component>
+  <sca:component xmi:id="_9QiRkJ1AEeySuJvcOo8iqQ" name="ComponentCSV2XML" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_9QiRkZ1AEeySuJvcOo8iqQ" processName="JDBC.CSV2XML"/>
+  </sca:component>
+  <sca:component xmi:id="_A3nE8J1MEeySuJvcOo8iqQ" name="ComponentXML2CSV" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_A3nE8Z1MEeySuJvcOo8iqQ" processName="JDBC.XML2CSV"/>
+  </sca:component>
+  <sca:component xmi:id="_kRrj4J3bEeynQOfS-uvVyg" name="ComponentDB2CSV" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_kRrj4Z3bEeynQOfS-uvVyg" processName="JDBC.SQL2CSV"/>
+  </sca:component>
+  <sca:component xmi:id="_c5Dzsp3fEeynQOfS-uvVyg" name="ComponentMDB2CSV_CUSID=SURCH" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_c5Dzs53fEeynQOfS-uvVyg" processName="JDBC.DB2CSV_CUSID"/>
+  </sca:component>
+  <sca:component xmi:id="_m6IqgJ30EeyPvqoOdRPpnQ" name="ComponentMDB_CSV" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_m6IqgZ30EeyPvqoOdRPpnQ" processName="JDBC.MDB_CSV"/>
+  </sca:component>
+  <sca:component xmi:id="_FkytEJ4NEeyPvqoOdRPpnQ" name="ComponentSQL" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_FkytEZ4NEeyPvqoOdRPpnQ" processName="JDBC.DB2CSV"/>
+  </sca:component>
+  <sca:component xmi:id="_gO82AJ4iEeyPvqoOdRPpnQ" name="ComponentWRITE_XML1" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_gO9dEJ4iEeyPvqoOdRPpnQ" processName="JDBC.WRITE_XML_Persons"/>
+  </sca:component>
+  <sca:component xmi:id="_k8nh8J7FEeyI_bhsBNlI1g" name="ComponentCopyOfDB2CSV_CUSID" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_k8nh8Z7FEeyI_bhsBNlI1g" processName="JDBC.Call_Process_DB2CSV"/>
+  </sca:component>
+  <sca:component xmi:id="_f4HoEJ-bEeyK1MQoaVCf7A" name="ComponentError_SubProcess_DB2CSV_CUSID" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_f4HoEZ-bEeyK1MQoaVCf7A" processName="JDBC.ErrorSubProcessDB2CSVcusid"/>
+  </sca:component>
+  <sca:component xmi:id="_xHIwcJ-pEeyTzPasBsalqQ" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_xHIwcZ-pEeyTzPasBsalqQ" processName="PARSE.LISTFILE"/>
+  </sca:component>
+  <sca:component xmi:id="_6TGQwKEJEeytGb5PzNSXxg" name="ComponentJDBC-TRANSACTIION" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_6TGQwaEJEeytGb5PzNSXxg" processName="JDBC.JDBC-TRANSACTIION"/>
+  </sca:component>
+  <sca:component xmi:id="_K9PewKFKEeyNk7ZL-CYlMA" name="ComponentRecived" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_K9PewaFKEeyNk7ZL-CYlMA" processName="EMS.SenderEMS"/>
+  </sca:component>
+  <sca:component xmi:id="_gKQIUKNpEeyustppqFtzmg" name="ComponentRecivedEMS" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_gKQIUaNpEeyustppqFtzmg" processName="EMS.RecivedEMS"/>
+  </sca:component>
+  <sca:component xmi:id="_UljIQKQoEeyxmstP99hjNg" name="ComponenttrasitionEMS" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_UljIQaQoEeyxmstP99hjNg" processName="EMS.trasitionEMS"/>
+  </sca:component>
+  <sca:component xmi:id="_bfgokKW7EeyYVeLBZA1Swg" name="ComponentCopyOfRecivedEMS" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_bfgokaW7EeyYVeLBZA1Swg" processName="EMS.CopyOfRecivedEMS"/>
+  </sca:component>
+  <sca:component xmi:id="_26uJEKXSEeyYVeLBZA1Swg" name="ComponentA" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_26uJEaXSEeyYVeLBZA1Swg" processName="EMS.A"/>
+  </sca:component>
+  <sca:component xmi:id="_4G198KXSEeyYVeLBZA1Swg" name="ComponentB" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_4G198aXSEeyYVeLBZA1Swg" processName="EMS.B"/>
+  </sca:component>
+  <sca:component xmi:id="_4_3QoKXSEeyYVeLBZA1Swg" name="ComponentC" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_4_3QoaXSEeyYVeLBZA1Swg" processName="EMS.C"/>
+  </sca:component>
+  <sca:component xmi:id="_43uL0KXTEeyYVeLBZA1Swg" name="ComponentCopyOfSenderEMS" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_43uL0aXTEeyYVeLBZA1Swg" processName="EMS.CopyOfSenderEMS"/>
+  </sca:component>
+  <sca:component xmi:id="_hQzqcKYLEeyT-JvVk0jSwA" name="ComponentReqRes" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_hQzqcaYLEeyT-JvVk0jSwA" processName="EMS_syn.ReqRes"/>
+  </sca:component>
+  <sca:component xmi:id="_gMVDwKYNEeyT-JvVk0jSwA" name="Component1CopyOfRecivedEMS" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_gMVDwaYNEeyT-JvVk0jSwA" processName="EMS_syn.Receiver"/>
+  </sca:component>
+  <sca:component xmi:id="_k5tmoKYSEeyT-JvVk0jSwA" name="ComponentNewReceiver" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_k5tmoaYSEeyT-JvVk0jSwA" processName="EMS_syn.NewReceiver"/>
+  </sca:component>
+</sca:composite>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Persons_NewXMLSchema1" xmlns:tns="http://www.example.org/Persons_NewXMLSchema1" elementFormDefault="qualified">
+
+
+
+
+
+
+
+
+
+
+    <complexType name="Person_type">
+    	<sequence>
+    		<element ref="tns:Fname"></element>
+    		<element ref="tns:Mname"></element>
+    		<element ref="tns:Lname"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="Persons_type">
+    	<sequence>
+    		<element ref="tns:Person" minOccurs="1" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+    
+    <element name="Fname" type="string"></element>
+
+    <element name="Mname" type="string"></element>
+
+    <element name="Lname" type="string"></element>
+
+    <element name="Person" type="tns:Person_type"></element>
+
+    <element name="Persons" type="tns:Persons_type"></element>
+</schema>

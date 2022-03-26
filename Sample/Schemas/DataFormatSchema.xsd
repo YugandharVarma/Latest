@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat/03a052fe-4dc0-4b9b-85ea-f1e98047b21d" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ns.tibco.com/bw/palette/dataformat/03a052fe-4dc0-4b9b-85ea-f1e98047b21d">
+  <xsd:element name="CUSTOMER" tibex:source="sr.index.dataFormatResource">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="CUSID" type="xsd:integer"/>
+                <xsd:element name="CUSNAME" type="xsd:string"/>
+                <xsd:element name="CUSADD" type="xsd:string"/>
+                <xsd:element name="CUSPH" type="xsd:integer"/>
+                <xsd:element name="CUSMAILID" type="xsd:string"/>
+                <xsd:element name="CUSSALARY" type="xsd:string"/>
+                <xsd:element name="CUSSTATUS" type="xsd:string"/>
+                <xsd:element name="CUSDATE" type="xsd:string"/>
+            </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:CUSTOMERDETAILS xmlns:tns="http://www.example.org/NewXMLSchema">
+    <tns:CUSTOMER>
+        <tns:CUSID>1256</tns:CUSID>
+        <tns:CUSNAME>RAVI</tns:CUSNAME>
+        <tns:CUSADD>HYD</tns:CUSADD>
+        <tns:CUSPH>9963200134</tns:CUSPH>
+        <tns:CUSMAILID>Ravi12@gmail.com</tns:CUSMAILID>
+        <tns:CUSSALARY>25000</tns:CUSSALARY>
+        <tns:CUSSTATUS>true()</tns:CUSSTATUS>
+        <tns:CUSDATE>2022-03-06T17:06:14.196+05:30</tns:CUSDATE>
+    </tns:CUSTOMER>
+</tns:CUSTOMERDETAILS><?xml version="1.0" encoding="UTF-8"?>
+<tns:CUSTOMERDETAILS xmlns:tns="http://www.example.org/NewXMLSchema">
+    <tns:CUSTOMER>
+        <tns:CUSID>1256</tns:CUSID>
+        <tns:CUSNAME>RAVI</tns:CUSNAME>
+        <tns:CUSADD>HYD</tns:CUSADD>
+        <tns:CUSPH>9963200134</tns:CUSPH>
+        <tns:CUSMAILID>Ravi12@gmail.com</tns:CUSMAILID>
+        <tns:CUSSALARY>25000</tns:CUSSALARY>
+        <tns:CUSSTATUS>true()</tns:CUSSTATUS>
+        <tns:CUSDATE>2022-03-07T10:45:58.792+05:30</tns:CUSDATE>
+    </tns:CUSTOMER>
+</tns:CUSTOMERDETAILS>

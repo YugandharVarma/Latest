@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/MassageSelector_NewXMLSchema2" xmlns:tns="http://www.example.org/MassageSelector_NewXMLSchema2" elementFormDefault="qualified">
+
+    <complexType name="Message_type">
+    	<sequence>
+    		<element ref="tns:product"></element>
+    	</sequence>
+    </complexType>
+    
+    <element name="Message" type="tns:Message_type"></element>
+
+    <element name="product" type="string"></element>
+</schema>

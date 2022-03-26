@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_03a052fe-4dc0-4b9b-85ea-f1e98047b21d="http://ns.tibco.com/bw/palette/dataformat/03a052fe-4dc0-4b9b-85ea-f1e98047b21d" xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_QTFHUZzyEeySuJvcOo8iqQ" name="sample.DataFormatResource" type="dataformat:DataFormat">
+  <imports xmi:id="_eFdSEJzyEeySuJvcOo8iqQ" importType="http://www.w3.org/2001/XMLSchema" namespace="http://ns.tibco.com/bw/palette/dataformat/03a052fe-4dc0-4b9b-85ea-f1e98047b21d"/>
+  <jndi:configuration xsi:type="dataformat:DataFormat" xmi:id="_QTFHUpzyEeySuJvcOo8iqQ" formatType="Fixed format" colSeparator="," colSeparatorParseRule="Treat each character entered as a potential column separator" lineSeparator="Carriage Return/Line Feed (windows)" fillCharacter="Others" schemaElementQName="_03a052fe-4dc0-4b9b-85ea-f1e98047b21d:CUSTOMER" lineLength="2" fieldOffsetsStr="CUSID(0,0)&#xA;CUSNAME(0,0)&#xA;CUSADD(0,0)&#xA;CUSPH(0,0)&#xA;CUSMAILID(0,0)&#xA;CUSSALARY(0,0)&#xA;CUSSTATUS(0,0)&#xA;CUSDATE(0,0)">
+    <fieldOffsets xmi:id="_lZuJ4JzyEeySuJvcOo8iqQ" name="CUSID"/>
+    <fieldOffsets xmi:id="_n0EFYJzyEeySuJvcOo8iqQ" name="CUSNAME"/>
+    <fieldOffsets xmi:id="_o5cZEJzyEeySuJvcOo8iqQ" name="CUSADD"/>
+    <fieldOffsets xmi:id="_ra_IwJzyEeySuJvcOo8iqQ" name="CUSPH"/>
+    <fieldOffsets xmi:id="_uYXf4JzyEeySuJvcOo8iqQ" name="CUSMAILID"/>
+    <fieldOffsets xmi:id="_wWL3cJzyEeySuJvcOo8iqQ" name="CUSSALARY"/>
+    <fieldOffsets xmi:id="_yFbAcJzyEeySuJvcOo8iqQ" name="CUSSTATUS"/>
+    <fieldOffsets xmi:id="_3_EUYJzyEeySuJvcOo8iqQ" name="CUSDATE"/>
+  </jndi:configuration>
+</jndi:namedResource>
